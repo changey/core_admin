@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Online/Offline</title>
+    </head>
+    <body>
+        <input type="radio" name="on/off" onclick="online();" /> Online
+        <br />
+        <input type="radio" name="on/off" onclick="offline();" /> Offline
+        <br />
+        <span id="update"></span>
+        <script type="text/javascript">
+            function online(){
+                document.getElementById("update").innerHTML = "Online";
+            }
+            function offline(){
+                document.getElementById("update").innerHTML = "Offline";
+            }
+        </script>
+    </body>
+</html>
