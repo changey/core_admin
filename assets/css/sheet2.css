@@ -240,34 +240,3 @@ div.footer div.news div.top {
 	padding: 0 10px;
 	background: url(http://cdn-floridaflourish.s3.amazonaws.com/news-bg-top.jpg) no-repeat 8px 0;
 }
-/* =INNER PAGE STYLES
-   ....................................... */
-div.header-inner {
-	background: url(../fw/header-inner-bg-tile.png) repeat-x 0 0;
-	height: 40px;
-	padding: 30px 20px 25px 20px;
-}
-div.content-inner {
-	width: 980px;
-	margin: 0 auto;
-	background: url(../fw/content-inner-bg-tile.png) repeat-y 10px 0;
-}
-div.content-inner div.bottom {
-	width: 980px;
-	margin: auto;
-	height: 20px;
-	background: url(../fw/content-inner-bg-bottom.png) no-repeat 10px 0;
-}
-div.content-inner div.main {
-	position: relative;
-	float: left;
-	width: 565px;
-	padding: 25px 30px 0 60px;
-	background: url(../fw/main-bg.jpg) no-repeat 5px 0;
-}
-div.content-inner div.sidebar {
-	float: right;
-	width: 325px;
-	background: url(../fw/sidebar-bg.jpg) no-repeat 0 0;
-}
-}

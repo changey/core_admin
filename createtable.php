@@ -2,6 +2,19 @@
 //connect to MySQL
 include_once 'config.php';
 
+$query = 'DROP TABLE IF EXISTS tags';
+mysql_query($query, $con) or die (mysql_error($con));
+//create the table
+$query = '
+        CREATE TABLE tags (
+        id        INTEGER UNSIGNED  NOT NULL AUTO_INCREMENT, 
+        name      VARCHAR(255)      NOT NULL,  
+
+        PRIMARY KEY (id)
+    ) 
+    ENGINE=MyISAM';
+mysql_query($query, $con) or die (mysql_error($con));
+
 $query = 'DROP TABLE IF EXISTS itinerary';
 mysql_query($query, $con) or die (mysql_error($con));
 //create the table
@@ -76,18 +89,6 @@ $query = '
         user        VARCHAR(16)       NOT NULL,
         pass        VARCHAR(16)       NOT NULL,
         expert      BOOLEAN           NOT NULL,
-
-        PRIMARY KEY (id)
-    ) 
-    ENGINE=MyISAM';
-mysql_query($query, $con) or die (mysql_error($con));
-
-$query = '
-        CREATE TABLE experts (
-        id          INTEGER UNSIGNED  NOT NULL AUTO_INCREMENT, 
-        user        VARCHAR(16)       NOT NULL,
-        pass        VARCHAR(16)       NOT NULL,
-        flight      VARCHAR(256)      NOT NULL,
 
         PRIMARY KEY (id)
     ) 
